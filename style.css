@@ -82,8 +82,12 @@
 }
 .banner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px 140px;
+}
+.banner-description{
+    width: 50%;
 }
 .banner h2{
     font-family: Quicksand;
@@ -98,6 +102,183 @@
     font-family: Quicksand;
     font-size: 16px;
     font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 20px 0;
+}
+.curriculum{
+    background: url(assets/bg.png);
+    margin: 15px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 48px 0;
+}
+.curriculum-box{
+    display: flex;
+    gap: 23px;
+}
+.curriculum-title h2{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 37px;
+    font-weight: 560;
+    line-height: 46px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.8px solid rgb(222, 245, 255);
+    border-radius: 16px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    padding: 52px 32px;
+    width: 40%;
+    text-align: center;
+}
+.box-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box h3{
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 560;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin: 27px;
+}
+.box p{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+}
+.box img{
+    width: 105px;
+    height: 90px;
+}
+.box a{
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 560;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 30px;
+}
+#box-1{
+    color: rgb(100, 200, 255);
+}
+#box-2{
+    color: rgb(240, 170, 0);
+}
+#box-3{
+    color: rgb(135, 0, 255);
+}
+.scroll-btn{
+    display: flex;
+    gap: 10px;
+}
+.scrl-btn{
+    border-radius: 24px;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 720;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 14px 18px;
+}
+.footer{
+    background: rgb(1, 172, 253);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 182px 140px 112px;
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 40%;
+}
+.kids-edu{
+    display: flex;
+    align-items: center;
+}
+.kids-edu h3{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 30px;
+    font-weight: 560;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.edu-plan p{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 7px;
+}
+.about-school h3{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 560;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.hafa li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.m-link{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.social-media{
+    display: flex;
+    gap: 8px;
+}
+.kit h3{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 560;
     line-height: 20px;
     letter-spacing: 0%;
     text-align: left;
@@ -116,5 +297,49 @@
     }
     .logo img{
         width: 80%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .banner-description{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-description h2{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 560;
+        line-height: 49px;
+    }
+    .banner-description p{
+        text-align: center;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .curriculum{
+        margin: 0;
+        padding: 20px 10px;
+    }
+    .curriculum-box{
+        flex-direction: column;
+    }
+    .box{
+        width: auto;
+        padding: 10 13px;
+    }
+    .scrl-btn{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 15px;
+        padding: 53px 10px 48px 16px;
+        margin-bottom: 0;
+    }
+    .section-1{
+        width: 100%;
     }
 }
