@@ -114,7 +114,7 @@
     flex-direction: column;
     align-items: center;
     gap: 64px;
-    padding: 48px 0;
+    padding: 48px 0 20px 0;
 }
 .curriculum-box{
     display: flex;
@@ -138,7 +138,7 @@
     border-radius: 16px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     padding: 52px 32px;
-    width: 40%;
+    flex: 1;
     text-align: center;
 }
 .box-1{
@@ -204,6 +204,119 @@
     letter-spacing: 0%;
     text-align: center;
     padding: 14px 18px;
+}
+.stories{
+    background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 140px 160px 140px;
+}
+#story-title{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 37px;
+    font-weight: 560;
+    line-height: 46px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 64px 0;
+}
+.story-cards{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+.top-card{
+    width: 540px;
+}
+.mini-card{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 16px;
+}
+.mini-card > .card{
+    max-width: 290px;
+    max-height: 300px;
+}
+.card{
+    border-radius: 13px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    width: 100%;
+    border-radius: 13px 13px 0px 0px;
+}
+.top-card h3{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 20px 80px 20px 31px;
+}
+.top-card p{
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 35px 27px 31px;
+}
+.top-card img{
+    width: 100%;
+    height: 380px;
+}
+.mini-card h3{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 5% 18% 5%;
+}
+.card-btn{
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    left: -25px;
+    top: -28px;
+    padding: 5px 40px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+.top-btn{
+    left: -160px;
+    background: rgb(60, 216, 232);
+}
+#card-btn-1{
+    background: rgb(149, 178, 38);
+}
+#card-btn-2{
+    background: rgb(93, 88, 240);
+}
+#card-btn-3{
+    background: rgb(93, 88, 240);
+}
+#card-btn-4{
+    background: rgb(93, 88, 240);
 }
 .footer{
     background: rgb(1, 172, 253);
@@ -321,17 +434,33 @@
     }
     .curriculum{
         margin: 0;
-        padding: 20px 10px;
+        padding: 20px 15px 10px 15px;
     }
     .curriculum-box{
         flex-direction: column;
     }
     .box{
         width: auto;
-        padding: 10 13px;
+        padding: 10 10px;
     }
     .scrl-btn{
         display: none;
+    }
+    .stories{
+        padding: 30px 15px;
+        margin: 0;
+    }
+    .top-card{
+        display: none;
+    }
+    .mini-card > .card{
+        height: 240px;
+    }
+    .card-btn{
+        left: -15px;
+    }
+    .card h3{
+        font-size: 12px;
     }
     .footer{
         flex-direction: column;
